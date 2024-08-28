@@ -1,0 +1,79 @@
+*{
+    padding: 0px;
+    margin: 0px;    
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    background-color:rgba(231, 227, 227, 0.301);
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.register-area{
+    background-color: white;
+    border: solid 1px #DCDCDC;
+    border-radius: 15px;
+    width: 20em;
+    margin: 90px auto;
+    padding: 50px 20px 20px;
+    text-align: center;
+}
+
+.register-area h2{
+    margin-bottom: 15px;
+}
+
+.register-area input{
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid #DCDCDC 1px;
+}
+
+.register-area input:hover{
+    /*Parametro inset define que a sombra será interna do elemento*/
+    /*Parametro default faz a sombra vazar para fora da caixa*/
+    box-shadow: 0 0 7px #DCDCDC;
+}
+
+.register-area #forget-password{
+    margin: 17px 0 15px 123px;/*
+    margin-top: 17px;
+    margin-left: 110px;
+    */
+    border: none;
+    display: block;
+    background: none;
+    color: #1a4dff;
+    font-style: italic;
+    text-align: right;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.register-area #forget-password:hover{
+    text-decoration: underline;
+}
+
+.register-area .login{
+    margin: 10px auto;
+    width: 69%;
+    display: block;
+    padding: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #FFFFFF;
+    border-radius: 5px;
+    font-weight: bolder;
+    background-color: #1a4dff;
+    border: none;
+    cursor: pointer;
+}
+
+.register-area .login:hover{
+    background-color: #1a1eff;
+}
