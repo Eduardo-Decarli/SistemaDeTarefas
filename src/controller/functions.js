@@ -1,14 +1,20 @@
 //recebe variaveis do user
-function validateRegister(){
-    let nomeUser = document.getElementById('name-area').value;
-    let emailUser = document.getElementById('email-area').value;
-    let password = document.getElementById('password-area').value;
+function validateRegister() {
 
-    console.log('ok')
+    const form = document.getElementById('fomrsRegister');
+
+        form.addEventListener('submit', event => {
+            event.preventDefault()
+
+            const nameUser = form.getElementById('name-area')
+        })
+
+    console.log(form); 
+
 
     if(toString(password).length < 8){
         alert('A senha tem que ser maior do que 8 caracteres');
     }
 
-    const user = new User(nomeUser, emailUser, password);
+    const user = new User(nameUser, emailUser, password);
 }

@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <script src="../controller/functions.js"></script>
 </head>
 
 <body>
-    <!--Formulário de login-->
+    <!--Formulário de Registro-->
     <div class="container">
         <div class="register-area">
             <h2>Login</h2>
-            <form action="" onsubmit="validateRegister()">
-                
+            <form id="fomrsRegister" onsubmit="validateRegister()">
+
                 <Label for="name-area">
-                    <input type="text" id="name-area" placeholder="Digite seu Nome" required>
+                    <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
                 </Label>
                 <label for="email-area">
                     <input type="email" id="email-area" placeholder="Digite seu Email" required>
@@ -24,11 +25,11 @@
                 <label for="password-area">
                     <input type="password" id="password-area" placeholder="Digite sua Senha" required>
                 </label>
-                <button type="submit" class="login" >Fazer Login</a>
-                <button class="login" href="register.html">Fazer Cadastro</a>
+                
+                <input type="submit" class="login" value="Fazer Login">
+                <button class="login">Fazer Cadastro</button>
             </form>
         </div>
     </div>
-    <script href="../controller/functions.js"></script>
 </body>
 </html>
