@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -13,19 +13,22 @@
     <div class="container">
         <div class="register-area">
             <h2>Login</h2>
-            <form action="">
-                <Label for="email-area">
-                    <input type="text" id="email-area">
+            <form action="" onsubmit="validateRegister()">
+                
+                <Label for="name-area">
+                    <input type="text" id="name-area" placeholder="Digite seu Nome" required>
                 </Label>
-                <label for="password-area">
-                    <input type="password" id="password-area">
+                <label for="email-area">
+                    <input type="email" id="email-area" placeholder="Digite seu Email" required>
                 </label>
+                <label for="password-area">
+                    <input type="password" id="password-area" placeholder="Digite sua Senha" required>
+                </label>
+                <button type="submit" class="login" >Fazer Login</a>
+                <button class="login" href="register.html">Fazer Cadastro</a>
             </form>
-            <button id="forget-password">Esqueci minha Senha</button>
-            <button class="login">Fazer Login</button>
-            <button class="login">Fazer Cadastro</button>
         </div>
     </div>
+    <script href="../controller/functions.js"></script>
 </body>
-
 </html>
