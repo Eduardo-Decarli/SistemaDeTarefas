@@ -17,17 +17,21 @@
             </div>
             <div class="register-area">
                 <h2>Login</h2>
-                <form action="">
-                    <Label for="email-area">
-                        <input type="text" id="email-area">
+                <form id="formsLogin">
+                    <Label for="name-area">
+                        <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
                     </Label>
-                    <label for="password-area">
-                        <input type="password" id="password-area">
+                    <label for="email-area">
+                        <input type="email" id="email-area" placeholder="Digite seu Email" required>
                     </label>
-                </form>
-                <button id="forget-password">Esqueci minha Senha</button>
-                <a class="login" href="menu.html">Fazer Login</a>
-                <a class="login" href="register.html">Fazer Cadastro</a>
+                    <label for="password-area">
+                        <input type="password" id="password-area" placeholder="Digite sua Senha" required>
+                    </label>
+                    <p id="error-mensage"></p>
+                    <button id="forget-password">Esqueci minha Senha</button>
+                    <button type="submit" class="login">Fazer Login</button>
+                    <button class="login">Fazer Cadastro</button>
+                </form>  
             </div>
         </div>
     <script href="../controller/functions.js"></script>

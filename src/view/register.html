@@ -10,24 +10,21 @@
 
 <body>
     <!--Formulário de Registro-->
-    <div class="container">
+<div class="container">
         <div class="register-area">
-            <h2>Login</h2>
+            <h2>Cadastro</h2>
             <form id="formsRegister">
-
-                <Label for="name-area">
-                    <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
-                </Label>
                 <label for="email-area">
                     <input type="email" id="email-area" placeholder="Digite seu Email" required>
                 </label>
                 <label for="password-area">
                     <input type="password" id="password-area" placeholder="Digite sua Senha" required>
                 </label>
+                <p id="error-mensage"></p>
                 
-                <input type="submit" class="login" value="Fazer Login">
-                <button class="login">Fazer Cadastro</button>
-            </form>
+                <button type="submit" class="login">Cadastrar</button>
+                <button class="login">Fazer Login</button>
+            </form>    
         </div>
     </div>
     <script src="../controller/functions.js"></script>
