@@ -5,35 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Login</title>
 </head>
 
 <body>
     <!--Formulário de login-->
     <div class="container">
-        
-            <div class="leftImage-login">
-                <img src="" alt="">
-            </div>
-            <div class="register-area">
-                <h2>Login</h2>
-                <form id="formsLogin">
-                    <Label for="name-area">
-                        <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
-                    </Label>
-                    <label for="email-area">
-                        <input type="email" id="email-area" placeholder="Digite seu Email" required>
-                    </label>
-                    <label for="password-area">
-                        <input type="password" id="password-area" placeholder="Digite sua Senha" required>
-                    </label>
-                    <p id="error-mensage"></p>
-                    <button id="forget-password">Esqueci minha Senha</button>
-                    <button type="submit" class="login">Fazer Login</button>
-                    <button class="login">Fazer Cadastro</button>
-                </form>  
-            </div>
+        <div class="register-area">
+            <h2>Login</h2>
+            <form id="formsLogin">
+                <Label for="name-area">
+                    <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
+                </Label>
+                <label for="email-area">
+                    <input type="email" id="email-area" placeholder="Digite seu Email" required>
+                </label>
+                <label for="password-area">
+                    <input type="password" id="password-area" placeholder="Digite sua Senha" required>
+                </label>
+                <p id="error-mensage"></p>
+                <button id="forget-password">Esqueci minha Senha</button>
+                <button type="submit" class="login">Fazer Login</button>
+                <a href="./register.html" class="login">Fazer Cadastro</a>
+            </form>
         </div>
+    </div>
     <script href="../controller/functions.js"></script>
 </body>
 </html>

@@ -1,16 +1,9 @@
-class User{
-    constructor(name, email, password){
-        this.name = name,
-        this.email = email,
-        this.password - password
-    }
+const db = require('./DB')
 
-    loginUser(email, password){
+//Objeto Usuario
+const User = db.sequelize.define('Users', {
+    
+})
 
-    }
-
-    registerUser(name, email, password){
-
-    }
-}
+db.sequelize.sync()
 

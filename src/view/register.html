@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
     <!--Formulário de Registro-->
-<div class="container">
+    <div class="container">
         <div class="register-area">
             <h2>Cadastro</h2>
             <form id="formsRegister">
+                <Label for="name-area">
+                    <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
+                </Label>
                 <label for="email-area">
                     <input type="email" id="email-area" placeholder="Digite seu Email" required>
                 </label>
@@ -21,13 +24,14 @@
                     <input type="password" id="password-area" placeholder="Digite sua Senha" required>
                 </label>
                 <p id="error-mensage"></p>
-                
+
                 <button type="submit" class="login">Cadastrar</button>
                 <button class="login">Fazer Login</button>
-            </form>    
+            </form>
         </div>
     </div>
     <script src="../controller/functions.js"></script>
 
 </body>
+
 </html>
