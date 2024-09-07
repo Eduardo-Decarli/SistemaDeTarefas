@@ -13,15 +13,15 @@
     <div class="container">
         <div class="register-area">
             <h2>Cadastro</h2>
-            <form id="formsRegister">
+            <form action="/menu" method="POST" id="formsRegister">
                 <Label for="name-area">
-                    <input type="text" id="name-area" placeholder="Digite seu Nome" autofocus required>
+                    <input type="text" id="name-area" name="name" placeholder="Digite seu Nome" autofocus required>
                 </Label>
                 <label for="email-area">
-                    <input type="email" id="email-area" placeholder="Digite seu Email" required>
+                    <input type="email" id="email-area" name="email" placeholder="Digite seu Email" required>
                 </label>
                 <label for="password-area">
-                    <input type="password" id="password-area" placeholder="Digite sua Senha" required>
+                    <input type="password" id="password-area" name="password" placeholder="Digite sua Senha" required>
                 </label>
                 <p id="error-mensage"></p>
 
